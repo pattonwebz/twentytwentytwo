@@ -9,11 +9,11 @@
 
 if ( ! function_exists( 'twentytwentytwo_support' ) ) :
 	/**
-	 * Add theme supports
+	 * Set up theme defaults and register supports
+	 * 
+	 * @return void
 	 */
 	function twentytwentytwo_support() {
-
-		// Adding support for featured images.
 		add_theme_support( 'post-thumbnails' );
 
 		// Adding support for core block visual styles.
@@ -27,6 +27,8 @@ endif;
 
 /**
  * Enqueue scripts and styles.
+ * 
+ * @return void
  */
 function twentytwentytwo_scripts() {
 	// Enqueue theme stylesheet.
@@ -36,6 +38,8 @@ add_action( 'wp_enqueue_scripts', 'twentytwentytwo_scripts' );
 
 /**
  * Enqueue editor styles.
+ * 
+ * @return void
  */
 function twentytwentytwo_editor_styles() {
 	// Enqueue editor styles.

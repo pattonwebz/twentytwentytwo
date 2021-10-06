@@ -20,7 +20,7 @@ endif;
  */
 function twentytwentytwo_scripts() {
 	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'twentytwentytwo-style', get_template_directory_uri() . ' / style . css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'twentytwentytwo-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwentytwo_scripts' );
 

@@ -20,6 +20,7 @@
 		"@wordpress/stylelint-config": "^19.1.0",
 		"husky": "^4.3.0",
 		"lodash": "^4.17.21",
+		"prettier": "^2.4.1",
 		"stylelint": "^13.13.1"
 	},
 	"husky": {

@@ -95,7 +95,7 @@ const phpFiles = parseGitDiffToPathArray(
   "git diff --cached --name-only --diff-filter=ACM"
 ).filter((file) => file.endsWith(".php"));
 
-if (phpFiles.length) {
+if (phpFiles.length && phpcbf) {
   phpcbfResult = spawnSync(phpcbfPath, [...phpFiles], {
     shell: true,
     stdio: "inherit",
